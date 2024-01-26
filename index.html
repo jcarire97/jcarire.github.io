@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Puerto Rico</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+            <div class="header">
+            <img id="logo" src="Flag_of_Puerto_Rico.png" alt="Logo">
+            <div class="title">
+                <h1>Puerto Rico</h1>
+            </div>
+            <nav>
+                <div class="nav-links-a">
+                <a href="index.html">Home</a> |
+                <a href="About.html">About</a> |
+                <a href="cities.html">Cities</a>
+                </div>
+                </div>
+            </nav>
+    </header>
+    
+
+    <div>
+        <img src="Landscape.png" alt="Landscape" class="Landscape">
+    </div>
+    <section>
+        <div>
+            <h1>History</h1>
+        </div>
+        <div class="parent">
+            <div class="History">
+                <p>
+                    Puerto Rico (Spanish for 'rich port'; abbreviated PR; Taino: Borikén or Borinquén), officially the
+                    Commonwealth of Puerto Rico, is a Caribbean island and unincorporated territory of the United States with official 
+                    Commonwealth status. It is located in the northeast Caribbean Sea, approximately 1,000 miles (1,600 km) southeast 
+                    of Miami, Florida, between the Dominican Republic and the U.S. Virgin Islands, and includes the eponymous main 
+                    island and several smaller islands, such as Mona, Culebra, and Vieques. It has roughly 3.2 million residents, 
+                    and its capital and most populous city is San Juan. Spanish and English are the official languages of the 
+                    executive branch of government, though Spanish predominates.
+                </p>
+                <p>
+                    Puerto Rico was settled by a succession of peoples beginning 2,000 to 4,000 years ago; these included the 
+                    Ortoiroid, Saladoid, and Taíno. It was then colonized by Spain following the arrival of 
+                    Christopher Columbus in 1493. Puerto Rico was contested by other European powers, but remained a Spanish 
+                    possession for the next four centuries. An influx of African slaves and settlers primarily from the Canary Islands
+                    and Andalusia vastly changed the cultural and demographic landscape of the island. Within the Spanish Empire, 
+                    Puerto Rico played a secondary but strategic role compared to wealthier colonies like Peru and New Spain. 
+                    By the late 19th century, a distinct Puerto Rican identity began to emerge, centered around a fusion of indigenous,
+                    African, and European elements. In 1898, following the Spanish-American War, Puerto Rico was acquired by 
+                    the United States.
+                </p>
+                <p>
+                    Puerto Ricans have been U.S. citizens since 1917, and can move freely between the island and the mainland.
+                    However, when resident in the unincorporated territory of Puerto Rico, Puerto Ricans are disenfranchised at the 
+                    national level, do not vote for the president or vice president, and generally do not pay federal income tax.
+                    In common with four other territories, Puerto Rico sends a nonvoting representative to the U.S. 
+                    Congress, called a Resident Commissioner, and participates in presidential primaries; as it is not a state, 
+                    Puerto Rico does not have a vote in Congress, which governs it under the Puerto Rico Federal Relations Act of 1950. 
+                    Congress approved a local constitution in 1952, allowing U.S. citizens residing on the island to elect a governor. 
+                    Puerto Rico's current and future political status has consistently been a matter of significant debate.
+                </p>
+                <p>
+                    Beginning in the mid-20th century, the U.S. government, together with the Puerto Rico Industrial Development Company,
+                    launched a series of economic projects to develop Puerto Rico into an industrial high-income economy. It is 
+                    classified by the International Monetary Fund as a developed jurisdiction with an advanced, high-income economy;
+                    it ranks 40th on the Human Development Index. The major sectors of Puerto Rico's economy are manufacturing 
+                    (primarily pharmaceuticals, petrochemicals, and electronics) followed by services (namely tourism and hospitality).
+                </p>
+            </div>
+            <div class="aside-content1">
+                <aside>
+                    <h5>Population</h5>
+                        <table>
+                            <tr>
+                                <th>Year</th>
+                                <th>Pop.</th>
+                                <th>+%</th>
+                            </tr>
+                            <tr>
+                                <td>1980</td>
+                                <td>3,196,520</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>1990</td>
+                                <td>3,522,037</td>
+                                <td>10.2%</td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>3,808,610</td>
+                                <td>8.1%</td>
+                            </tr>
+                        </table>
+                </aside>
+            </div>
+        </div>
+    </section>
+        <section>
+            <div>
+                <h2>Map</h2>
+            </div>
+            <div class="Map-Container">
+                <a href="https://www.google.com/search?q=Puerto+Rico" target="_blank"><img src="Puerto Rico.png" alt="Mapa de Puerto Rico" class="Map"></a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h4>Contact</h4>
+            </div>
+            <div class="contactForm-container">
+                <form id="contactForm">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Your first name" autocomplete="given-name"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name" autocomplete="family-name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your email" autocomplete="email"><br>
+                    <label for="emailConfirm">Confirm Email:</label><br>
+                    <input type="email" id="emailConfirm" name="emailConfirm" placeholder="Confirm your email" autocomplete="email"><br>
+                    <label for="question">Question:</label><br>
+                    <textarea id="question" name="question" placeholder="Your question"></textarea><br>
+                </form>
+                
+            </div>
+        </section>
+    <footer>
+        <nav>
+            <div class="footer">
+                <div class="nav-links-b">
+                    <a href="index.html">Home</a> |
+                    <a href="About.html">About</a> |
+                    <a href="cities.html">Cities</a>
+                </div>
+              </div>
+        </nav>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          var email = document.getElementById('email').value;
+          var emailConfirm = document.getElementById('emailConfirm').value;
+        
+          if (email !== emailConfirm) {
+            alert('Emails do not match!');
+            event.preventDefault();
+          }
+        });
+        </script>
+</body>
+</html>
